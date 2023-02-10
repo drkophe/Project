@@ -1,0 +1,95 @@
+/* -----------------------Font----------------------------- */
+
+@font-face {
+    font-family: 'Walt-Disney-Script-v41';
+    src:url('fonts/Walt-Disney-Script-v41.ttf.woff') format('woff'),
+        url('fonts/Walt-Disney-Script-v41.ttf.svg#Walt-Disney-Script-v41') format('svg'),
+        url('fonts/Walt-Disney-Script-v41.ttf.eot'),
+        url('fonts/Walt-Disney-Script-v41.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NexaLight';
+    src:url('fonts/NexaLight.ttf.woff') format('woff'),
+        url('fonts/NexaLight.ttf.svg#NexaLight') format('svg'),
+        url('fonts/NexaLight.ttf.eot'),
+        url('fonts/NexaLight.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-----------------------General---------------------------*/
+
+*
+{
+	font-family: 'NexaLight';
+	font-size: 1.05em;
+
+}
+
+body
+{
+	width: 100%;
+	background-image: url('img/watercolor-background.jpg');
+
+}
+
+
+/*-----------Quelque regle media querie--------------*/
+
+@media screen and (max-width: 1000px)
+
+{
+	p 
+	{
+		font-size: 1em;
+	}
+}
+
+/* Sidenav menu */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+/* Active class */
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}

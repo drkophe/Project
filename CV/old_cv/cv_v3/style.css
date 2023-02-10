@@ -1,0 +1,174 @@
+/* --------------Font---------------- */
+
+@font-face 
+{
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Black.eot');
+    src: local('☺'), url('fonts/Montserrat-Black.woff') format('woff'), url('fonts/Montserrat-Black.ttf') format('truetype'), url('fonts/Montserrat-Black.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.eot');
+    src: local('☺'), url('fonts/Montserrat-Bold.woff') format('woff'), url('fonts/Montserrat-Bold.ttf') format('truetype'), url('fonts/Montserrat-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.eot');
+    src: local('☺'), url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.ttf') format('truetype'), url('fonts/Montserrat-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Light.eot');
+    src: local('☺'), url('fonts/Montserrat-Light.woff') format('woff'), url('fonts/Montserrat-Light.ttf') format('truetype'), url('fonts/Montserrat-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*--------------------General------------------------*/
+
+*
+{
+	font-size: 1.1em;
+	font-family: 'Montserrat','Montserrat-Light','Montserrat-Regular','Montserrat-Bold','Montserrat-Black';
+	color: white; 
+}
+
+body
+{
+	background-color: #0c0c0c;
+}
+
+#bloc_page
+{
+	width: 100%;
+	display: flex;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+#page
+{
+	margin-left: 20%;
+	border-left: 1px blue solid;
+	background-color: #242424;
+	padding-left:5%;
+	padding-top: 3%;
+	float: right;
+}
+
+h2
+{
+	font-size: 1.2em;
+}
+
+strong
+{
+	font-weight: normal;
+}
+
+/*--------------------Onglet Gauche------------------------*/
+header
+{
+	background-color: red;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	left: 20px;
+	width: 350px;
+}
+
+#titre
+{
+	font-size: 1.3em;
+	border: 2px grey solid;
+	margin: auto;
+	padding-bottom: 50px;
+	text-transform: uppercase;
+}
+
+#titre:hover
+{
+	font-size: 1.4em;
+	color: grey;
+}
+
+.photo
+{
+	border: 2px grey solid;
+	margin: auto;
+}
+
+.sommaire
+{
+	list-style-type: none;
+	border: 2px grey solid;
+	margin: auto;
+	padding-top: 50px;
+}
+
+.list_sommaire
+{
+	padding: 5px;
+}
+
+.contact
+{
+	font-size: 0.6em;
+	position: fixed;
+	left: 15px;
+	bottom: 0px;
+}
+/*--------------------Me connaitre------------------------*/
+
+.presentation
+{
+	font-size: 1em;
+	font-weight: normal;
+	text-transform: none;
+	text-decoration: none;
+}
+
+/*--------------------Experience------------------------*/
+
+.list
+{
+	font-size: 0.9em;
+}
+
+/*--------------------Competence------------------------*/
+
+.pcompetence
+{
+	font-size: 1em;
+}
+
+/*--------------------Formation------------------------*/
+
+.pformation
+{
+	font-size: 1em;
+}
+
+/*--------------------Footer------------------------*/
+
+footer
+{
+	margin-top: 15%;
+	font-size: 0.8em;
+}

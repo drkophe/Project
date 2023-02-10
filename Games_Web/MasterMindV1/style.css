@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* border : 1px solid black; */
+}
+
+body {
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: rgb(222, 222, 222);
+    margin: 50px 50px 50px 50px;
+    padding: 20px 20px 20px 20px;
+    width: 400px;
+    height: 700px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ************    EN TETE    *************** */
+
+#codeSecret {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 80%;
+    height: 75px;
+}
+
+#rond1, #rond2, #rond3, #rond4 {
+    background-color: grey;
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+}
+
+#codeSecretCache {
+    width: 80%;
+    height: 75px;
+    background-color: rgb(35, 35, 35);
+
+    position: relative;
+    top: 58px;
+}
+
+
+/* ************  PROPOSITION   *************** */
+
+#proposition {
+    background-color: rgb(161, 161, 161);
+    padding: 5px 5px 5px 5px;
+    height: 500px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.essai {
+    height: 75px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+.essai>div:last-child {
+    width: 40px;
+    border: 0px;
+}
+
+.essai>div:nth-child(2) {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.essai>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rond {
+    background-color: rgb(23, 23, 23);
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+}
+
+.rondPetit {
+    background-color: grey;
+    border-radius: 50px;
+
+    width: 7px;
+    height: 7px;
+}
+
+
+/* ************  BOUTON   *************** */
+
+#boutons {
+    background-color: rgb(68, 68, 68);
+    height: 75px;
+    width: 80%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#play, #reset {
+    height: 55%;
+    width: 35%;
+}

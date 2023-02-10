@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<!--onglet-->
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css">
+		<title>Global</title>
+	</head>
+
+
+	<body id="block_page">
+<!--en-tête-->
+	<header>
+		<div class="barre-up">
+			<a href="pages/"></a>
+
+		
+		</div>
+	</header>
+
+
+	</body>
+
+</html>

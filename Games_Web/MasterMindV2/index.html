@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterMind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ------------------------ HEADER ------------------------------ -->
+
+    <header>
+
+        <div>
+            <p>Player Name</p>
+            <input type="text" id="playerName">
+        </div>
+
+        <div>
+            <p>Game Start !</p>
+            <button id="buttonGameStart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="36" viewBox="0 0 31 36">
+                    <path id="Polygone_1" data-name="Polygone 1" d="M15.406,4.468a3,3,0,0,1,5.189,0L33.383,26.494A3,3,0,0,1,30.789,31H5.211a3,3,0,0,1-2.594-4.506Z" transform="translate(31) rotate(90)" fill="#fff"/>
+                  </svg>
+                  
+            </button>
+        </div>
+
+        <div id="maxScore">
+            <p>Max Score</p>
+            <input type="text">
+        </div>
+
+    </header>
+
+<!-- ------------------------ MAIN ------------------------------ -->
+
+    <main>
+
+        <div id="cacheCodeSecret">
+            <div class="rondCacheCodeSecret"></div>
+            <div class="rondCacheCodeSecret"></div>
+            <div class="rondCacheCodeSecret"></div>
+            <div class="rondCacheCodeSecret"></div>
+        </div>
+
+    <!-- ------------- CODE SECRET ------------------- -->
+
+        <div id="barreCodeSecret">
+            <div id="codeSecret">
+                <div class="rondSecret"></div>
+                <div class="rondSecret"></div>
+                <div class="rondSecret"></div>
+                <div class="rondSecret"></div>
+            </div>
+    
+            <div id="compteur">
+                <p id="compteurNumber">0</p>
+                <p id="compteurFixe">4</p>
+                <div id="slash"></div>
+            </div>
+        </div>
+
+    <!-- ------------- RESULTAT  ------------------- -->
+
+        <p id="resultat">...</p>
+
+    <!-- ------------- PROPOSITION ------------------- -->
+
+        <div class="barre" id="barre6">
+            <div class="proposition" id="proposition6">
+                <div class="rond"></div>
+                <div class="rond"></div>
+                <div class="rond"></div>
+                <div class="rond"></div>
+            </div>
+    
+            <div class="information" id="information6">
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+            </div>    
+        </div>
+
+        <!-- -------------------------- -->
+
+        <div class="barre" id="barre5">
+            <div class="proposition" id="proposition5">
+                <div class="rond"></div>
+                <div class="rond"></div>
+                <div class="rond"></div>
+                <div class="rond"></div>
+            </div>
+    
+            <div class="information" id="information5">
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+            </div>    
+        </div>
+
+        <!-- -------------------------- -->
+
+        <div class="barre" id="barre4">
+            <div class="proposition" id="proposition4">
+                <div class="rond"></div>
+                <div class="rond"></div>
+                <div class="rond"></div>
+                <div class="rond"></div>
+            </div>
+    
+            <div class="information" id="information4">
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+            </div>    
+        </div>
+
+        <!-- -------------------------- -->
+
+        <div class="barre" id="barre3">
+            <div class="proposition" id="proposition3">
+                <div class="rond"></div>
+                <div class="rond"></div>
+                <div class="rond"></div>
+                <div class="rond"></div>
+            </div>
+    
+            <div class="information" id="information3">
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+            </div>    
+        </div>
+
+        <!-- -------------------------- -->
+
+        <div class="barre" id="barre2">
+            <div class="proposition" id="proposition2">
+                <div class="rond"></div>
+                <div class="rond"></div>
+                <div class="rond"></div>
+                <div class="rond"></div>
+            </div>
+    
+            <div class="information" id="information2">
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+            </div>    
+        </div>
+
+        <!-- -------------------------- -->
+
+        <div class="barre" id="barre1">
+            <div class="proposition" id="proposition1">
+                <div class="rond"></div>
+                <div class="rond"></div>
+                <div class="rond"></div>
+                <div class="rond"></div>
+            </div>
+    
+            <div class="information" id="information1">
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+                <div class="rondPetit"></div>
+            </div>    
+        </div>
+
+    <!-- ------------- BOUTON ------------------- -->
+
+        <div id="barreBouton">
+
+            <button id="play">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="33" viewBox="0 0 26 33">
+                    <path id="Polygone_2" data-name="Polygone 2" d="M13.967,3.991a3,3,0,0,1,5.066,0l11.043,17.4A3,3,0,0,1,27.543,26H5.457a3,3,0,0,1-2.533-4.607Z" transform="translate(26) rotate(90)" fill="#717171"/>
+                  </svg>                  
+            </button>
+
+            <button id="reset">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="33" viewBox="0 0 24 33">
+                    <path id="Icon_material-loop" data-name="Icon material-loop" d="M18,6V1.5l-6,6,6,6V9a9.007,9.007,0,0,1,9,9,8.806,8.806,0,0,1-1.05,4.2l2.19,2.19A11.979,11.979,0,0,0,18,6Zm0,21a9.007,9.007,0,0,1-9-9,8.806,8.806,0,0,1,1.05-4.2L7.86,11.61A11.979,11.979,0,0,0,18,30v4.5l6-6-6-6Z" transform="translate(-6 -1.5)" fill="#656565"/>
+                  </svg>                  
+            </button>
+
+        </div>
+
+    </main>
+
+
+<!-- ----------------------- SECTION ------------------------------- -->
+
+    <section>
+
+        <p>Score</p>
+
+
+        <label for=""></label>
+        <label for=""></label>
+        <label for=""></label>
+        <label for=""></label>
+        <label for=""></label>
+        <label for=""></label>
+        <label for=""></label>
+        <label for=""></label>
+        <label for=""></label>
+        <label for=""></label>
+        <label for=""></label>
+        <label for=""></label>
+
+    </section>
+
+<!-- ----------------------- FOOTER ------------------------------- -->
+
+    <footer>
+
+        <div class="colorPicker" id="blue"></div>
+        <div class="colorPicker" id="red"></div>
+        <div class="colorPicker" id="green"></div>
+        <div class="colorPicker" id="yellow"></div>
+        <div class="colorPicker" id="purple"></div>
+
+    </footer>
+
+
+
+    <!-- <main>
+        <div id="codeSecret">
+            <div class="rondSecret" id="rond1"></div>
+            <div class="rondSecret" id="rond2"></div>
+            <div class="rondSecret" id="rond3"></div>
+            <div class="rondSecret" id="rond4"></div>
+        </div>
+
+        <div id="proposition">
+            <div class="essai" id="essai6">
+                <p>6</p>
+                <div id="test1">
+                    <div class="rond"></div>
+                    <div class="rond"></div>
+                    <div class="rond"></div>
+                    <div class="rond"></div> 
+                </div>
+                <div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                </div>
+            </div>
+
+            <div class="essai" id="essai5">
+                <p>5</p>
+                <div>
+                    <div class="rond"></div>
+                    <div class="rond"></div>
+                    <div class="rond"></div>
+                    <div class="rond"></div> 
+                </div>
+                <div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                </div>
+            </div>
+
+            <div class="essai" id="essai4">
+                <p>4</p>
+                <div>
+                    <div class="rond"></div>
+                    <div class="rond"></div>
+                    <div class="rond"></div>
+                    <div class="rond"></div> 
+                </div>
+                <div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                </div>
+            </div>
+
+            <div class="essai" id="essai3">
+                <p>3</p>
+                <div>
+                    <div class="rond"></div>
+                    <div class="rond"></div>
+                    <div class="rond"></div>
+                    <div class="rond"></div> 
+                </div>
+                <div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                </div>
+            </div>
+
+            <div class="essai" id="essai2">
+                <p>2</p>
+                <div>
+                    <div class="rond"></div>
+                    <div class="rond"></div>
+                    <div class="rond"></div>
+                    <div class="rond"></div> 
+                </div>
+                <div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                </div>
+            </div>
+            
+            <div class="essai" id="essai1">
+                <p>1</p>
+                <div id="proposition1">
+                    <div class="rond"></div>
+                    <div class="rond"></div>
+                    <div class="rond"></div>
+                    <div class="rond"></div> 
+                </div>
+                <div id="indicateur1">
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                    <div class="rondPetit"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="boutons">
+            <button id="play">Play</button>
+            <button id="reset">Reset</button>
+        </div>
+        <p id="result">Resultat</p>
+    </main> -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="scriptV6.js"></script>    
+</body>
+</html>
+
+
+

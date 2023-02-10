@@ -1,0 +1,188 @@
+/* ---------------------font--------------------*/
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Black.eot');
+    src: local('☺'), url('fonts/Montserrat-Black.woff') format('woff'), url('fonts/Montserrat-Black.ttf') format('truetype'), url('fonts/Montserrat-Black.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.eot');
+    src: local('☺'), url('fonts/Montserrat-Bold.woff') format('woff'), url('fonts/Montserrat-Bold.ttf') format('truetype'), url('fonts/Montserrat-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.eot');
+    src: local('☺'), url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.ttf') format('truetype'), url('fonts/Montserrat-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Light.eot');
+    src: local('☺'), url('fonts/Montserrat-Light.woff') format('woff'), url('fonts/Montserrat-Light.ttf') format('truetype'), url('fonts/Montserrat-Light.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* ---------------------General---------------------- */
+
+body
+{
+    background-color: #0c0c0c
+}
+
+*
+{
+	font-family: 'Montserrat','Montserrat-Light','Montserrat-Regular','Montserrat-Bold','Montserrat-Black';
+	color: white;
+}
+
+#bloc_page
+{
+    width: 100%;
+    margin: auto;
+}
+
+
+a
+{
+    text-decoration: none;
+}
+
+/* -----------------menu top--------------------- */
+#logo
+{
+    display: flex;
+    width: 1000px;
+    padding: 5px;
+    margin: auto;
+}
+
+#logo_img
+{
+    width: auto;
+    margin-top: 5px;
+    margin-right: 7px;
+}
+
+h1
+{
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    float: right;
+    width: auto;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+}
+
+.sommaire
+{
+    display: flex;
+}
+
+ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+/* ------------centre de la page---------------- */
+#top_1
+{
+    display: flex;
+    width: 900px;
+    margin: auto;
+    border-bottom: 2px grey solid;
+    padding-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h2
+{
+    font-size: 4em;   
+    float: left;
+    font-family:'Montserrat-Bold'
+    font-weight: 900;
+    order: 1;
+    display: inline-block;
+}
+
+.hire_us_1
+{
+    order: 3;
+    padding: 10px;
+    margin-left: 100px;
+    background-color: blue;
+    display: inline-block;
+    position: relative;
+    right: 60px; 
+    bottom: 100px;
+    border: 2px white solid;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.introduction-visual
+{
+    float: right;
+    order: 2;
+    display: inline-block;
+}
+
+/* -------------------bas de la page------------------ */
+footer
+{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.text_2:hover
+{
+    text-decoration: none;
+    color: white;
+}
+
+.text_2
+{
+    text-decoration: none;
+    color: grey;
+}
+
+h3:hover
+{
+    text-decoration: none;
+    color: white;
+}
+
+h3
+{
+    text-decoration: none;
+    color: grey;
+}
+
